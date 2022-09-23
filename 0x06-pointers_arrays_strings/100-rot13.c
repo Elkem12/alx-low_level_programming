@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
  * rot13 - encodes a string using the ROT13 system
  * @str: String to be encoded
  *
