@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * _strncpy - A function that copies a string.
  *
@@ -7,11 +8,23 @@
  *
  * Return: @dest
 */
+=======
+#include "main.h"
+
+/**
+ * _strncpy -  function that copies a string..
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * @n: number.
+ * Return: void
+ */
+>>>>>>> f87307b742cf8ef0ef8c6379ac4d7243222e6929
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
+<<<<<<< HEAD
 	/**
 	 * iterate through src array
 	 * where if there is no null byte
@@ -26,6 +39,16 @@ char *_strncpy(char *dest, char *src, int n)
 	 * write additional nullbytes to dest to
 	 * ensure that a total of n bytes is written
 	*/
+=======
+	i = 0;
+
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+>>>>>>> f87307b742cf8ef0ef8c6379ac4d7243222e6929
 	while (i < n)
 	{
 		dest[i] = '\0';

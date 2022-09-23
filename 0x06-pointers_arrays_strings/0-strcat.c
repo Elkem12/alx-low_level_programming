@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * _strcat - function that concatenates
  *          two strings.
@@ -22,5 +23,34 @@ char *_strcat(char *dest, char *src)
 		/*append src[c2] to dest[c] while overwritting the null byte in dest*/
 		dest[c++] = src[c2];
 
+=======
+#include "main.h"
+
+/**
+ * _strcat - function that concatenates two strings.
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * Return: dest.
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+>>>>>>> f87307b742cf8ef0ef8c6379ac4d7243222e6929
 	return (dest);
 }
