@@ -2,20 +2,16 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * main - check the code for ALX School students.
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
- */
-int main(void)
-{
+ */ int main(void) {
     list_t *head;
-
     head = NULL;
-    add_node_end(&head, "Bob");
+    add_node_end(&head, "Jennie");
     add_node_end(&head, "&");
-    add_node_end(&head, "Kris");
+    add_node_end(&head, "Jay");
     add_node_end(&head, "love");
     add_node_end(&head, "asm");
     print_list(head);
@@ -23,3 +19,6 @@ int main(void)
     head = NULL;
     return (0);
 }
+
+
+
